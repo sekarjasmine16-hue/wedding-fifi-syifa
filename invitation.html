@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Wedding of Fifi & Syifa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/invitation.css" />
+  </head>
+
+  <body>
+    <audio src="assets/audio/audio.mp3" autoplay loop></audio>
+
+    <div class="mobile-wrapper">
+      <div class="penerima-tamu reveal">
+        <p class="kepada">Kepada Yth.</p>
+        <h3 id="namaTamu" class="nama-tamu">Tamu Undangan</h3>
+      </div>
+
+      <section class="slide hero">
+        <p class="arab">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ</p>
+        <p class="arti">
+          "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh,
+          pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+        </p>
+        <p>QS.Ar-Rum ayat 21</p>
+        <!-- ASSET SCROLL FADE -->
+        <div class="scroll-asset">
+          <img src="assets/image/1.png" class="Ornamen Pernikahan" />
+        </div>
+      </section>
+      <section class="slide artwork">
+        <img src="assets/image/tgg.png" class="artwork-img" />
+      </section>
+
+      <section class="slide compact lokasi">
+        <h2>Lokasi Acara</h2>
+
+        <p class="nama-tempat">Birushi Caffe</p>
+        <p class="alamat">Jl. Tj. Pura No.2, Karanganyar, Kec. Indramayu, Kabupaten Indramayu, Jawa Barat 45213</p>
+
+        <a href="https://maps.app.goo.gl/985W6ywP2kuD27kC7" target="_blank" class="btn btn-maps"> Buka di Google Maps </a>
+      </section>
+
+      <section class="slide">
+        <h2>Menuju Hari Bahagia</h2>
+
+        <div id="countdown">
+          <div><span id="days">0</span><small>Hari</small></div>
+          <div><span id="hours">0</span><small>Jam</small></div>
+          <div><span id="minutes">0</span><small>Menit</small></div>
+          <div><span id="seconds">0</span><small>Detik</small></div>
+        </div>
+
+        <!-- TOMBOL GOOGLE CALENDAR -->
+        <a
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The+Wedding+of+Fifi+%26+Syifa&dates=20260111T000000Z/20260111T235900Z&details=Save+the+date!+The+Wedding+of+Ashfi+Royhana+%26+Muhammad+Syifa"
+          target="_blank"
+          class="btn btn-calendar"
+        >
+          Simpan ke Google Kalender
+        </a>
+      </section>
+
+      <section class="slide">
+        <h2>Kirim Hadiah</h2>
+        <h5>Kehadiran Anda adalah kado terindah bagi kami. Namun bagi Anda yang ingin berbagi tanda kasih secara nontunai, dapat melalui:</h5>
+        <img src="assets/image/fr.png" width="250px" height="250px" style="display: block; margin-left: auto; margin-right: auto" />
+        <h3>BCA (Ashfi Royhana)</h3>
+        <p id="rekening">3030929739</p>
+        <button class="btn" onclick="copyRek()">Salin Nomor Rekening</button>
+      </section>
+      <section class="slide-ucapan-gambar">
+        <img src="assets/image/yay.png" class="img-fade-scroll" alt="Ucapan Penutup" />
+      </section>
+    </div>
+
+    <script src="js/invitation.js"></script>
+  </body>
+</html>
