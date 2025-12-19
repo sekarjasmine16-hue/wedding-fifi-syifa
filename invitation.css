@@ -251,21 +251,26 @@ textarea {
 /* SECTION */
 .slide.artwork {
   min-height: auto;
+  max-width: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #e8d8b8; /* samakan background */
   padding: 40px 15px; /* Kurangi padding samping agar konten punya ruang */
   width: 100%;
+  margin: 0 auto; /* Biar tetap di tengah */
+  overflow-x: hidden; /* Mencegah konten keluar jalur ke samping */
+  position: relative;
   box-sizing: border-box; /* Sangat penting agar padding tidak menambah lebar */
 }
 
 
+
 .artwork-img {
   width: 100%;
-  max-width: 1080px;
-  aspect-ratio: 9 / 16;
-  height: auto;
-  display: block;
+  max-width: 420px;
+  margin: 0 auto; /* Biar tetap di tengah */
+  overflow-x: hidden; /* Mencegah konten keluar jalur ke samping */
+  position: relative;
 }
 
