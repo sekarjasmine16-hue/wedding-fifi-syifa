@@ -1,0 +1,271 @@
+bagian mana yang di ganti di css nya saya masih belum menegerti
+
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:'Times New Roman', Times, serif;
+  background: url("assets/image/bg1.jpg") no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  color: #222;
+}
+
+/* MOBILE WRAPPER */
+.mobile-wrapper {
+  width: 100%;
+  max-width: 420px;
+  background: #e8d6b7;
+  box-shadow: 0 0 30px rgba(0,0,0,0.08);
+}
+
+/* SECTION */
+/* BACKGROUND UNIFORM */
+.slide {
+  min-height: 100vh;
+  padding: 50px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #e8d6b7;
+}
+
+
+/* HERO */
+.hero {
+  background: hwb(#e8d6b7);
+}
+
+/* Container pembungkus nama tamu */
+.penerima-tamu {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kepada {
+  font-size: 13px;
+  text-transform: uppercase; /* Membuat teks jadi huruf kapital kecil */
+  letter-spacing: 3px; /* Memberi jarak antar huruf agar elegan */
+  color: #7a664d; /* Warna cokelat tua elegan */
+  margin-bottom: 8px;
+  font-family: Arial, sans-serif; /* Font bersih untuk label */
+}
+
+.nama-tamu {
+  font-size: 24px; /* Lebih besar agar menonjol */
+  font-family: 'Georgia', serif; /* Font serif memberikan kesan formal & mahal */
+  font-weight: 500;
+  color: #333;
+  font-style: italic; /* Gaya miring agar lebih artistik */
+  border-bottom: 1px solid #8b6f47; /* Garis tipis di bawah nama */
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.arab {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.arti {
+  font-size: 12px;
+  font-style: Arial;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.slide h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #8b6f47;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* COUNTDOWN (DIPERBAIKI) */
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+#countdown div {
+  background: #ffffff;
+  width: 70px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+#countdown span {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#countdown small {
+  font-size: 11px;
+  color: #666;
+}
+
+/* INPUT & BUTTON */
+input, textarea {
+  width: 900%;
+  max-width: 350px;
+  padding: 10px;
+  margin: 5px auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+.btn {
+  width: 100%;
+  max-width: 325px;
+  padding: 12px;
+  margin: 10px auto;
+  font-size: 18px;
+  background: #603c29;
+  color: #f5ebeb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.slide-ucapan-gambar {
+  width: 100%;
+  min-height: 100vh; /* Agar setinggi layar HP */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color:#e8d6b7; /* Sesuaikan dengan warna tema kamu */
+}
+
+.img-fade-scroll {
+  width: 100%;
+  height: auto;
+  max-width: 1080px; /* Maksimal lebar sesuai gambar kamu */
+  opacity: 0; /* Mulai dari tidak terlihat */
+  transform: translateY(50px); /* Mulai dari agak ke bawah */
+  transition: all 1.2s ease-out; /* Durasi animasi 1.2 detik */
+}
+
+/* Class ini akan ditambahkan oleh JavaScript saat di-scroll */
+.img-fade-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ===== LOKASI ===== */
+.lokasi {
+  background: #e8d6b7; /* samakan dengan tone undangan */
+}
+
+.nama-tempat {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.alamat {
+  font-size: 14px;
+  color: #555;
+  max-width: 420px;
+  margin: 0 auto 16px;
+  line-height: 1.6;
+}
+
+.btn-maps {
+  background: #6f5b3e;
+}
+
+/* GOOGLE CALENDAR BUTTON */
+.btn-calendar {
+  margin-top: 20px;
+  background: #ffffff;
+  color: #8b6f47;
+  border: 1.5px solid #8b6f47;
+  font-weight: 500;
+}
+
+.btn-calendar:hover {
+  background: #8b6f47;
+  color: #ffffff;
+}
+/* ===== SCROLL ASSET FULL MOBILE ===== */
+.scroll-asset {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 24px;
+
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.scroll-asset img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Desktop tetap mobile look */
+@media (min-width: 768px) {
+  .scroll-asset {
+    max-width: 480px;
+    margin: 24px auto 0;
+    border-radius: 16px;
+  }
+}
+/* SECTION */
+.slide.artwork {
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e8d8b8; /* samakan background */
+  padding: 40px 15px; /* Kurangi padding samping agar konten punya ruang */
+  width: 100%;
+  box-sizing: border-box; /* Sangat penting agar padding tidak menambah lebar */
+}
+
+
+.artwork-img {
+  width: 100%;
+  max-width: 1080px;
+  aspect-ratio: 9 / 16;
+  height: auto;
+  display: block;
+}
+
